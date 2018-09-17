@@ -20,12 +20,6 @@ class Path(object):
     def npmOutPutPath(cls):
         outPutFile = '/output/59/'
         return os.path.abspath('.') + outPutFile
-
-    # @classmethod
-    # def simulatorPath(cls):
-    #     # 这里填iOS 沙箱的目录,安卓的直接改这个地址
-    #     targetPath = '/sdcard/Android/data/com.tencent.vn.playground/files/.webapp/dirs'
-    #     return targetPath
         
 
 class VNTool(FileSystemEventHandler):
@@ -66,7 +60,7 @@ class VNTool(FileSystemEventHandler):
         observer.join()
 
     def checkSuccess(self,output):
-        outputString = str(output,'utf-8')
+        outputString = str(output) #,'utf-8'
         errorStartIndex =  outputString.find('[Fatal Error]')
         if(errorStartIndex == -1):
             return True
