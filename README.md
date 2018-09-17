@@ -20,10 +20,6 @@
 $ pip install watchdog
 ```
 
-### 安装adb(仅windows)
-
-Max OS已经打包在项目中了，无需另行安装
-
 ### 安装VN Playground.apk
 
 在Android手机上面安装VN Playground.apk,并将Android手机设置为允许USB调试，然后通过USB连接电脑，在看到是否同意该电脑调试时请选择是。  
