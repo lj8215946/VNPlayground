@@ -1,5 +1,7 @@
 # VideoNativePlayground
 
+Playground是一个让前端用户不用安装Android或iOS编译环境就可以体验VN开发的快速实验性项目。
+
 ## 1.准备工作
 
 ### 1.1)安装Node.js
