@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+	compileSdkVersion 25
+	buildToolsVersion '25.0.0'
+
+	defaultConfig {
+		//由于播放器sdk强校验packageName，而且防盗链so也校验包名。不同的apk需要不同的sdk的，无法用TvkVideo来匹配所以情况。
+		//暂时改用这个包名来解决播放问题，等以后正式的key和sdk下来再更换
+		applicationId "com.tencent.vn.playground"
+//		applicationId "edu.gemini.tinyplayer"
+		minSdkVersion 14
+		targetSdkVersion 25
+		versionCode 1
+		versionName "1.0"
+
+		ndk {
+			abiFilters "armeabi"
+		}
+	}
+
+	buildTypes {
+
+		debug {
+			minifyEnabled false
+			debuggable true
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+
+		release {
+			minifyEnabled false
+			debuggable true
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+	}
+}
+
+repositories {
+	flatDir {
+		dirs 'libs', 'video_native' //this way we can find the .aar file in libs folder
+	}
+}
+
+dependencies {
+	compile fileTree(dir: 'libs', include: ['*.jar'])
+
+	/** 引入VideoNative **/
+	compile 'com.android.support:recyclerview-v7:25.4.0'
+	compile 'com.squareup.okhttp3:okhttp:3.4.1'
+	compile 'com.squareup.okio:okio:1.11.0'
+	compile 'com.android.support:multidex:1.0.1'
+
+	compile(ext: 'aar', name: 'IRecyclerview-release')
+	compile(ext: 'aar', name: 'ImageLib-release')
+	compile(ext: 'aar', name: 'InterUtils-release')
+	compile(ext: 'aar', name: 'Network-release')
+	compile(ext: 'aar', name: 'Route-release')
+	compile(ext: 'aar', name: 'Utils-release')
+	compile(ext: 'aar', name: 'injector-release')
+	compile(ext: 'aar', name: 'input-release')
+	compile(ext: 'aar', name: 'js_plugins-release')
+	compile(ext: 'aar', name: 'videonative-release')
+	compile(ext: 'aar', name: 'vncomponent-release')
+	compile(ext: 'aar', name: 'vncore-release')
+	compile(ext: 'aar', name: 'vncss-release')
+	compile(ext: 'aar', name: 'vndata-release')
+	compile(ext: 'aar', name: 'vnexpression-release')
+	compile(ext: 'aar', name: 'vninjector-release')
+	compile(ext: 'aar', name: 'vnjs_plugins-release')
+	compile(ext: 'aar', name: 'vnutil-release')
+	compile(ext: 'aar', name: 'vnv8-release')
+	compile(ext: 'aar', name: 'vnyoga-release')
+	compile(ext: 'aar', name: 'Tvkvideo-release')
+
+	compile 'com.tencent.qqlive.fresco:static-webp:1.0.3'
+	compile 'com.tencent.qqlive.fresco:drawee:1.0.3'
+	compile 'com.tencent.qqlive.fresco:drawee-pipeline:1.0.3'
+	compile 'com.tencent.qqlive.fresco:drawee-volley:1.0.3'
+	compile 'com.tencent.qqlive.fresco:fbcore:1.0.3'
+	compile 'com.tencent.qqlive.fresco:imagepipeline:1.0.4'
+	compile 'com.tencent.qqlive.fresco:imagepipeline-base:1.0.3'
+	compile 'com.tencent.qqlive.fresco:imagepipeline-okhttp3:1.0.3'
+	compile 'com.tencent.qqlive.fresco:animated-base:1.0.3'
+	compile 'com.tencent.qqlive.fresco:animated-gif:1.0.3'
+	compile 'com.tencent.qqlive.fresco:animated-webp:1.0.3'
+}

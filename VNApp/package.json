@@ -1,0 +1,34 @@
+{
+  "name": "59",
+  "version": "1.0.0",
+  "description": "qqlive_train_wifi",
+  "scripts": {
+    "build_mac": "./deploy.sh",
+    "build_windows": "webpack && deploy.bat",
+    "build_publish": "node deploy"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "cross-env": "^5.2.0",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "wildcards-entry-webpack-plugin": "^2.1.0",
+    "zip-folder": "^1.0.0"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "collect.js": "^4.0.25",
+    "copy-webpack-plugin": "^4.5.2",
+    "core-js": "^2.5.7",
+    "date-fns": "^1.29.0",
+    "wildcards-entry-webpack-plugin": "^2.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+<scroll-view id="root">
+    <view vn:for="{{dataArray}}">
+        <image src="{{item.url}}" />
+        <text>{{item.title}}</text>
+    </view>
+</scroll-view>
+<view id="skip_picker_container">
+    <button bindTap="onClick1">默认</button>
+    <button bindTap="onClick2">酷黑模式</button>
+    <button bindTap="onClick3">老年模式</button>
+</view>

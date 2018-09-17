@@ -1,0 +1,797 @@
+* {
+    width: 100%;
+    height: auto;
+    font-size: 25rpx;
+    flex-direction: column;
+}
+
+scroll-view {
+    height: 86%;
+    flex-direction: column;
+    direction: column;
+    background-color: #F5F7F9;
+}
+
+scroll-view view {
+    height: 117rpx;
+    background-color: #FFFFFF;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rpx;
+    margin-bottom: 1rpx;
+}
+
+scroll-view view:active {
+    background-color: #d3d3d3;
+}
+
+scroll-view view text {
+    width: 1rpx;
+    color: #2f2f2f;
+    height: 100%;
+    text-align: left | center_vertical;
+    flex-grow: 1;
+    margin-right: 25rpx;
+}
+
+scroll-view view image {
+    aspect-ratio: 1;
+    width: 50rpx;
+}
+
+scroll-view view text, scroll-view view image {
+    height: auto;
+    margin-left: 25rpx;
+}
+
+
+
+
+
+scroll-view.skin_a {
+    background-color: #1f1f1f;
+}
+
+scroll-view.skin_a view {
+    background-color: #000000;
+    flex-direction: row-reverse;
+}
+
+scroll-view.skin_a view image {
+    margin-right: 25rpx;
+}
+
+
+scroll-view.skin_a view:active {
+    background-color: #3f3f3f;
+}
+
+scroll-view.skin_a view text {
+    color: white;
+    margin-right: 15rpx;
+}
+
+
+
+
+
+scroll-view.skin_b {
+    background-color: #E5E7E9;
+}
+
+scroll-view.skin_b view {
+    margin-top: 3rpx;
+    height: auto;
+    flex-direction: column;
+}
+
+scroll-view.skin_b view image {
+    margin-top: 30rpx;
+    width: 400rpx;
+    height: 300rpx;
+}
+
+scroll-view.skin_b view text {
+    margin: 30rpx;
+    width: auto;
+    height: auto;
+    color: black;
+    font-size: 35rpx;
+    align-items: bottom;
+}
+
+scroll-view.skin_b view:active {
+    background-color: #888888;
+}
+
+
+
+#skip_picker_container {
+    height: 14%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #a2a2a2;
+}
+
+#skip_picker_container button {
+    width: auto;
+    text-align: center;
+    padding: 10rpx 30rpx;
+    margin: 10rpx 15rpx;
+    font-size: 30rpx;
+    color: #3f3f3f;
+}
+
+
+
+
+
+
+
+
+
+
+list {
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+
+list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa:active{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa:active{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list {
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+
+
+
+
+list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+
+list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+
+list list#aaa:active{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa:active{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list {
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+
+list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list.aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list list list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa:active{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
+
+list list#aaa:active{
+    height: 132rpx;
+    width: 452rpx;
+    flex-direction: column;
+    margin: 15rpx;
+    padding: 10rpx;
+}
