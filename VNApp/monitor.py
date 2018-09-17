@@ -73,7 +73,7 @@ class VNTool(FileSystemEventHandler):
 
         errorEndIndex = outputString.find('npm ERR!')
         log = outputString[errorStartIndex:errorEndIndex]
-        print('\n--------build 失败--------')
+        print('\n--------打包失败--------')
         print(log)
         return False
 
@@ -84,7 +84,7 @@ class VNTool(FileSystemEventHandler):
             return
 
         os.system('clear')
-        print('即将 npm build')
+        print('正在打包...')
         self.isBuilding = True
         try:
             self.buildVN()
@@ -93,7 +93,7 @@ class VNTool(FileSystemEventHandler):
 
         self.isBuilding = False
         if(self.checkSuccess(self.buildOutput)):
-            print('Success: Build成功')
+            print('打包完成')
 
 
 tool = VNTool()
