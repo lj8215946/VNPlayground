@@ -11,6 +11,7 @@ import com.tencent.videonative.VNApp;
 import com.tencent.videonative.VideoNative;
 import com.tencent.videonative.adapter.PathAdapter;
 import com.tencent.videonative.app.input.IVNAppInfo;
+import com.tencent.videonative.component.VNCompRichNodeFactory;
 
 public class MainActivity extends Activity {
 
@@ -25,5 +26,11 @@ public class MainActivity extends Activity {
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 		mRecyclerView.setAdapter(new PathAdapter(LayoutInflater.from(this)));
 
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		VNCompRichNodeFactory.clearPageInfoCache();	//清空一下组件的内存cache
 	}
 }
